@@ -1,0 +1,20 @@
+{
+  "name": "art-ethics",
+  "homepage": "https://github.com/mdanaee/art-ethics",
+  "authors": [
+    "Dana Mahtab <mahtab.danaee@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "scrollreveal": "^3.1.4"
+  }
+}
