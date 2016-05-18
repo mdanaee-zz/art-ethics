@@ -154,7 +154,7 @@ p {
 }
 .home_text{
     text-align: center;
-	padding-top:10%;
+	padding-top:5%;
 }
 .home-iphone{
     text-align: right;
@@ -184,6 +184,7 @@ p {
     line-height: 28px;
     margin-top: 0px;
     font-weight: 300;
+	color:#39bed2;
 }
 .download-btn {
     margin-top: 90px;
@@ -249,16 +250,17 @@ tuor:visited {
 }
 .inner_about_area {
     padding-top: 50px;
+	padding-bottom: 50px;
 }
 .inner_about_title {
     padding-bottom: 50px;
 }
 .inner_about_title h2 {
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 40px;
     line-height: 37px;
     position: relative;
+	font-family: 'danaFont';
 }
 .inner_about_title h2:after {
     content: "";
@@ -281,7 +283,7 @@ tuor:visited {
 }
 .single_about_area div {
     position: absolute;
-    top: 0px;
+    top: -30px;
     left: 0px;
 }
 .single_about_area div i {
@@ -393,7 +395,7 @@ tuor:visited {
     background-repeat: no-repeat;
 }
 .testimonial .section_overlay {
-    background: rgba(0, 0, 0, .6);
+    /* background: rgba(0, 0, 0, .6); */
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -409,7 +411,6 @@ div.carousel-inner .item img {
     padding-bottom: 70px;
 }
 .testimonial_caption p {
-    color: #D8D8D8;
     font-size: 18px;
     line-height: 27px;
     padding-top: 50px;
@@ -425,7 +426,7 @@ div.carousel-inner .item img {
     color: #39bed2
 }
 .testimonial_caption h4 span {
-    color: #D8D8D8;
+    color: #333;
     font-style: italic;
     font-weight: 300;
 }
@@ -1073,4 +1074,101 @@ select:-webkit-autofill {
         transform: scale(1.0);
         -webkit-transform: scale(1.0);
     }
+}
+
+/*---------------------------------------
+   INTERACTIVE MAP             
+-----------------------------------------*/
+.description {
+  max-width: 600px;
+  margin: 0 auto;
+  color: rgba(229, 229, 229, 0.7);
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.centered-y {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.distribution-map {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.distribution-map > img {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.distribution-map .map-point {
+  cursor: pointer;
+  outline: none;
+  z-index: 0;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+  -o-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+  -webkit-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out, z-index 0.25s ease-in-out;
+  -webkit-transition-delay: 0.25s, 0.25s, 0.25s, 0.25s;
+  -webkit-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+  transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+  background: rgba(26, 26, 26, 0.85);
+  border: 5px solid #7fcff7;
+}
+.distribution-map .map-point .content {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  overflow: overlay;
+}
+.distribution-map .map-point:active, .distribution-map .map-point:focus {
+  margin: 0;
+  padding: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  width: 300px;
+  height: 220px;
+  color: #e5e5e5;
+  z-index: 1;
+  -webkit-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
+}
+.distribution-map .map-point:active .content, .distribution-map .map-point:focus .content {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+  -webkit-transition-delay: 0.25s, 0s, 0s;
+  -webkit-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+  overflow: hidden;
+}
+.distribution-map .map-point:active .content a:hover, .distribution-map .map-point:active .content a:active, .distribution-map .map-point:focus .content a:hover, .distribution-map .map-point:focus .content a:active {
+  color: #afe1fa;
 }
