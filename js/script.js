@@ -334,7 +334,9 @@ $(document).ready(function() {
 });
 
 
+// tooltip - popover 
 
+$("[data-toggle=popover]").popover();
 
 
 

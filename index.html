@@ -11,6 +11,8 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300' rel='stylesheet' type='text/css'>
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic' rel='stylesheet' type='text/css'>
+    <!-- Tooltip -->
+    
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -69,11 +71,11 @@
                         <ul class="nav navbar-nav navbar-right">
                             <!-- NAV -->
                             <li><a href="#HOME">HOME</a> </li>
-                            <li><a href="#ABOUT">ABOUT</a> </li>
-                            <li><a href="#FEATURES">FEATURES</a></li>
-                            <li><a href="#SCREENS">SCREENS</a> </li>
-                            <li><a href="#DOWNLOAD">DOWNLOAD </a> </li>
-                            <li><a href="#CONTACT">CONTACT </a> </li>
+                            <li><a href="#START">START</a> </li>
+                            <li><a href="#GROUPS">RELATIONSHIP</a></li>
+                            <li><a href="#DETAILS">MORE DETAILS</a></li>
+                            <li><a href="#IMMORALART">IMMORAL ART</a> </li>
+                            <li><a href="#WHATNOW">WHATNOW</a> </li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -91,7 +93,7 @@
                     </div>
                     <div class="col-md-12 wow fadeInUpBig">
                         <div style="text-align:center;">
-                        	<p>it all started on the <i class="pe-7s-date" style="font-size:22px"></i> 26th of Feb <span  class="counter_num">2016</span> at <i class="pe-7s-clock" style="font-size:22px"></i> <span  class="counter_num">14</span>:<span  class="counter_num">53</span></p><p>when I had to sign the university's code of conduct</p><p><br/><br/><i class="pe-7s-bottom-arrow" style="font-size:30px"></i></p>
+                        	<p>it all started on the <i class="pe-7s-date" style="font-size:22px"></i> 26th of Feb <span  class="counter_num">2016</span> at <i class="pe-7s-clock" style="font-size:22px"></i> <span  class="counter_num">14</span>:<span  class="counter_num">53</span></p><p>when I had to sign the university's code of conduct</p><p><br/><br/><a href="#START"><i class="pe-7s-bottom-arrow" style="font-size:30px"></i></a></p>
                             </div>
                      </div>
                 </div>
@@ -109,7 +111,7 @@
 ============================== -->
 
 
-    <section class="about page" id="ABOUT">
+    <section class="about page" id="START">
         <div class="inner_about_area">
             <div class="container">
                 <div class="row">
@@ -162,77 +164,35 @@
             </div>
         </div>
 
-        <div class="video_area">
+        <div class="video_area" id="GROUPS" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 wow fadeInLeftBig">
                     <!-- VIDEO LEFT TITLE -->
                         <div class="inner_about_title">
-                            <h2>And my jounery...</h2>
+                            <h2>And my journey...</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                         </div>
                         <div class="video-button">
                             <!-- BUTTON -->
-                            <a class="btn btn-primary btn-video" href="#FEATURES" role="button">Features</a>
+                            <a class="btn btn-primary btn-video" href="#DETAILS" role="button">Explain More</a>
                         </div>
                     </div>
                     <div class="col-md-9 wow fadeInRightBig">
                          <!-- VIDEO -->
                         <div class="video">
-                            <div class="distribution-map">
-    <!-- This was broken for a while because imgur :( -->
-    <!-- I don't trust this host. Image here if it goes down: http://i.imgur.com/M7aUkuS.png -->
-    <img src="http://s24.postimg.org/jnd9wc0n9/M7a_Uku_S.png">
-    <!--In the original application, these points are injected with Javascript, but ideally, they'd be injected with a haml loop. Because I'm hardcoding content, I'm presenting this as prerendered HTML-->
-    <button class="map-point" style="top:15%;left:35%">
-        <div class="content">
-            <div class="centered-y">
-                <h2>A Place</h2>
-                <p>You can put plenty of details in here. In the original, I listed contact information and linked phone numbers and email addresses.</p>
-            </div>
-        </div>
-    </button>
-    <button class="map-point" style="top:35%;left:50%">
-        <div class="content">
-            <div class="centered-y">
-                <h2>Another Place</h2>
-                <p>Lorem ipsum something something</p>
-            </div>
-        </div>
-    </button>
-    <button class="map-point" style="top:76%;left:82.5%">
-        <div class="content">
-            <div class="centered-y">
-                <h2>Marauder Town</h2>
-                <p>I solemnly swear that I am up to no good</p>
-            </div>
-        </div>
-    </button>
-    <button class="map-point" style="top:45%;left:16%">
-        <div class="content">
-            <div class="centered-y">
-                <h2>Logan's Mum</h2>
-                <p>I&rsquo;m a marshmallow</p>
-            </div>
-        </div>
-    </button>
-    <button class="map-point" style="top:60%;left:53%">
-        <div class="content">
-            <div class="centered-y">
-                <h2>Toto</h2>
-                <p>I bless the rains</p>
-            </div>
-        </div>
-    </button>
-    <button class="map-point" style="top:25%;left:70%">
-        <div class="content">
-            <div class="centered-y">
-                <h2>With Love</h2>
-                <p>&mdash; 007</p>
-            </div>
-        </div>
-    </button>
-</div>
+                            <!-- The actual markup -->
+                            <!--<ul id="controls">
+                                <li class="to-end">autonomism</li>
+                                  <li class="to-middle">Compare</li>
+                                <li class="to-start">moralism</li>
+                            </ul> -->
+                                    
+                            <div id="before-after">
+                                <div class="view view-after"><img src="images/img-autonomism.jpg" /></div>
+                                <div class="view view-before"><img src="images/img-moralism.jpg" /></div>
+                                <div id="dragme"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -241,20 +201,37 @@
     </section>
     <!-- End About Us -->
 
+<!-- =========================
+     START CALL TO ACTION
+============================== -->
+	
+<div class="call_to_action">
+        <div class="container">
+            <div class="row wow fadeInLeftBig" data-wow-duration="1s">
+                <div class="col-md-12">
+                    <div class="page-body" style="color:#fff;">
+						<span style="font-size:30px;">Oscar Wilde</span><span style="font-size:6px; color:#39bed2;">There is no such thing as a moral or an immoral book. Books are well written, or badly written.</span> <span>Confucius (551 – 479 BC)</span> <span style="padding: 10px; background: #39bed2; font-size:4px;">
+								<b>His disciples' related of him: "There were four things which the Master taught: letters, ethics, devotion of soul, and truthfulness." (Analects, bk. vii., c. xxiv.)</b></span> CONFUCIUS held that the encouragement of the fine arts was no less a duty of the state than the protection of the people from foreign <b>foes</b> and the suppression of internal disorder. <span style="font-size:50px;">Plato</span><img src="images/plato.png" style="width:50px; height:50px;" /> (Art as Imitation) Good speech, . . . good accord, good shape and good rhythm follow upon goodness of character. (400de) <span style="font-size:8px; color:#39bed2;"><b>Culture, Art and Poetry in The Republic</b> by <b>Professor Alexander Nehamas</b> Princeton University</span>
+			</div>
+			</div>
+</div>
+      </div>
+            </div>
+        </div>
+    </div>
 
-
-
+    <!-- END CALL TO ACTION -->
 
  <!-- =========================
      START TESTIMONIAL SECTION
 ============================== -->
 
-    <section id="TESTIMONIAL" class="testimonial parallax">
+    <section class="testimonial parallax" id="DETAILS">
         <div class="section_overlay">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 wow bounceInDown">
-                        <div id="carousel-example-caption-testimonial" class="carousel slide" data-ride="carousel">
+                    	<div id="carousel-example-caption-testimonial" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
                                 <li data-target="#carousel-example-caption-testimonial" data-slide-to="0" class="active"></li>
@@ -273,8 +250,8 @@
                                                 <img src="images/client_1.png" alt="">
                                                 <div class="testimonial_caption">
                                                    <!-- DESCRIPTION -->  
-                                                    <h2>When the artist is immoral</h2>
-                                                    <h4><span>example,</span> Hitler's Paintings</h4>
+                                                    <h2>Autonomism</h2>
+                                                    <h4><span>example,</span> Aristotle</h4>
                                                     <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
                                                 </div>
                                             </div>
@@ -289,8 +266,8 @@
                                                 <img src="images/client_2.png" alt="">
                                                 <div class="testimonial_caption">
                                                 <!-- DESCRIPTION --> 
-                                                    <h2>When the content of the artwork is about an immoral work</h2>
-                                                    <h4><span>example,</span> Schindler's List</h4>
+                                                    <h2>Moderate Moralism</h2>
+                                                    <h4><span>example,</span> hhhh</h4>
                                                     <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
                                                 </div>
                                             </div>
@@ -305,8 +282,8 @@
                                                 <img src="images/client_3.png" alt="">
                                                 <div class="testimonial_caption">
                                                 <!-- DESCRIPTION --> 
-                                                    <h2>The process of creating the artwork is immoral</h2>
-                                                    <h4><span>example,</span> Killing Animals for Art</h4>
+                                                    <h2>Cognitive Immoralism</h2>
+                                                    <h4><span>example,</span> Kieran</h4>
                                                     <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
                                                 </div>
                                             </div>
@@ -321,8 +298,8 @@
                                                 <img src="images/client_4.png" alt="">
                                                 <div class="testimonial_caption">
                                                 <!-- DESCRIPTION --> 
-                                                    <h2>The message the artwork is promoting is immoral</h2>
-                                                    <h4><span>example,</span> The Anarchist Cookbook</h4>
+                                                    <h2>Moralism</h2>
+                                                    <h4><span>example,</span> Plato</h4>
                                                     <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
                                                 </div>
                                             </div>
@@ -342,18 +319,17 @@
     <!-- END TESTIMONIAL SECTION -->
 
 
-
 <!-- =========================
      START FEATURES
 ============================== -->
-    <section id="FEATURES" class="features page">
+    <section id="IMMORALART" class="features page">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <!-- FEATURES SECTION TITLE -->
                     <div class="section_title wow fadeIn" data-wow-duration="1s">
-                        <h2>Features</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                      <h2>When art might be considered immoral?</h2>
+                      <p>There seem to be a pattern of what some might consider an immoral artwork. Should the artist's moral failing affect the value of his creation? What if the content of an artwork is a matter of immoral subject? Does it matter how the art has been created? What is the message behind the artwork?</p>
                     </div>
                     <!-- END FEATURES SECTION TITLE -->
                 </div>
@@ -371,8 +347,9 @@
                             <div><span class="pe-7s-like"></span></div>
 
                             <!-- FEATURE HEADING AND DESCRIPTION -->
-                            <h3>Creative Design<span>/</span></h3>
-                            <p>Lorem ipsum </p>
+                            <h3>Immoral Artist<span>/</span></h3>
+                            <p>"who you are and what you believe somehow affects your work."
+                            <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Reference" data-placement="bottom" data-content="Kurt Knecht blog, 06/02/2014, Title: Woody Allen, Richard Wagner, and immoral artists" class="popoverThingy">*</a></p>                            
                         </div>
 
                         <!-- END SINGLE FEATURE -->
@@ -384,20 +361,8 @@
                             <div><span class="pe-7s-science"></span></div>
 
                             <!-- FEATURE HEADING AND DESCRIPTION -->
-                            <h3>Modern Look<span>/</span></h3>
+                            <h3>Immoral Content<span>/</span></h3>
                             <p>Lorem ipsum dolor, c</p>
-                        </div>
-                        <!-- END SINGLE FEATURE -->
-
-
-                        <!-- FEATURE -->
-                        <div class="left_single_feature">
-                            <!-- ICON -->
-                            <div><span class="pe-7s-look"></span></div>
-
-                            <!-- FEATURE HEADING AND DESCRIPTION -->
-                            <h3>Minimal Layout<span>/</span></h3>
-                            <p>Lorem ipsum dolor, consectetur sed do </p>
                         </div>
                         <!-- END SINGLE FEATURE -->
 
@@ -416,7 +381,7 @@
                             <div><span class="pe-7s-monitor"></span></div>
 
                             <!-- FEATURE HEADING AND DESCRIPTION -->
-                            <h3><span>/</span>Retina ready</h3>
+                            <h3><span>/</span>immoral process</h3>
                             <p>Lorem ipsum dolor, consectetur sed do adipisicing elit</p>
                         </div>
                         <!-- END SINGLE FEATURE -->
@@ -428,101 +393,17 @@
                             <div><span class="pe-7s-phone"></span></div>
 
                             <!-- FEATURE HEADING AND DESCRIPTION -->
-                            <h3><span>/</span>Responsive Ready</h3>
+                            <h3><span>/</span>immoral message</h3>
                             <p>Lorem ipsum dolor</p>
                         </div>
                         <!-- END SINGLE FEATURE -->
 
-
-                        <!-- FEATURE -->
-                        <div class="right_single_feature">
-                            <!-- ICON -->
-                            <div><span class="pe-7s-gleam"></span></div>
-
-                            <!-- FEATURE HEADING AND DESCRIPTION -->
-                            <h3><span>/</span>Clean Code</h3>
-                            <p>Lorem ipsum dolor, consectetur sed </p>
-                        </div>
-                        <!-- END SINGLE FEATURE -->
                     </div>
                 </div>
-            </div>
-        </div>
+          </div>
+      </div>
     </section>
     <!-- END FEATURES SECTION -->
-
-
-
-<!-- =========================
-     START CALL TO ACTION
-============================== -->
-    <div class="call_to_action">
-        <div class="container">
-            <div class="row wow fadeInLeftBig" data-wow-duration="1s">
-                <div class="col-md-9">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                </div>
-                <div class="col-md-3">
-                    <a class="btn btn-primary btn-action" href="#" role="button">Purchase Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- END CALL TO ACTION -->
-
-
-<!-- =========================
-     Start APPS SCREEN SECTION
-============================== -->
-    <section class="apps_screen page" id="SCREENS">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 wow fadeInBig" data-wow-duration="1s">
-                        <!-- APPS SCREEN TITLE -->
-                        <div class="section_title">
-                            <h2>Screens</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>                           
-                        </div>
-                        <!-- END APPS SCREEN TITLE -->
-                    </div>
-                </div>
-            </div>
-
-        <div class="screen_slider">
-            <div id="demo" class="wow bounceInRight" data-wow-duration="1s">
-                <div id="owl-demo" class="owl-carousel">
-
-                    <!-- APPS SCREEN IMAGES -->
-                    <div class="item">
-                    <a href="images/screens/iPhone04.png" rel="prettyPhoto[pp_gal]"><img src="images/iPhone04.png" width="60" height="60" alt="APPS SCREEN" /></a>
-                    </div>
-                    <div class="item">
-                        <a href="images/screens/iPhone05.png" rel="prettyPhoto[pp_gal]"><img src="images/iPhone05.png" width="60" height="60" alt="APPS SCREEN" /></a>
-                    </div>
-                    <div class="item">
-                        <a href="images/screens/iPhone06.png" rel="prettyPhoto[pp_gal]"><img src="images/iPhone06.png" width="60" height="60" alt="APPS SCREEN" /></a>
-                    </div>
-                    <div class="item">
-                        <a href="images/screens/iPhone07.png" rel="prettyPhoto[pp_gal]"><img src="images/iPhone07.png" width="60" height="60" alt="APPS SCREEN" /></a>
-                    </div>
-                    <div class="item">
-                        <a href="images/screens/iPhone04.png" rel="prettyPhoto[pp_gal]"><img src="images/iPhone04.png" width="60" height="60" alt="APPS SCREEN" /></a>
-                    </div>
-                    <div class="item">
-                        <a href="images/screens/iPhone05.png" rel="prettyPhoto[pp_gal]"><img src="images/iPhone05.png" width="60" height="60" alt="APPS SCREEN" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- ENS APPS SCREEN -->
-
-
-
 
 
 <!-- =========================
@@ -536,30 +417,30 @@
                 <div class="row text-center">
                     <div class="col-md-3">
                         <div class="single_fun_facts">
-                            <i class="pe-7s-cloud-download"></i>
-                            <h2><span  class="counter_num">699</span> <span>+</span></h2>
-                            <p>Downloads</p>
+                            <i class="pe-7s-study"></i>
+                            <h2><span  class="counter_num">9</span></h2>
+                            <p>Academic Journals</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="single_fun_facts">
-                            <i class="pe-7s-look"></i>
-                            <h2><span  class="counter_num">1999</span> <span>+</span></h2>
-                            <p>Likes</p>
+                            <i class="pe-7s-monitor"></i>
+                            <h2><span  class="counter_num">20</span> <span>+</span></h2>
+                            <p>Websites</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="single_fun_facts">
-                            <i class="pe-7s-comment"></i>
-                            <h2><span  class="counter_num">199</span> <span>+</span></h2>
-                            <p>Feedbacks</p>
+                            <i class="pe-7s-notebook"></i>
+                            <h2><span  class="counter_num">3</span> </h2>
+                            <p>Books</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="single_fun_facts">
-                            <i class="pe-7s-cup"></i>
-                            <h2><span  class="counter_num">10</span> <span>+</span></h2>
-                            <p>Awards</p>
+                            <i class="pe-7s-wine"></i>
+                            <h2><span  class="counter_num">15</span> <span>+</span></h2>
+                            <p>Glasses of Wine</p>
                         </div>
                     </div>
                 </div>
@@ -575,13 +456,13 @@
 <!-- =========================
      START DOWNLOAD NOW 
 ============================== -->
-    <section class="download page" id="DOWNLOAD">
+    <section class="download page" id="WHATNOW">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <!-- DOWNLOAD NOW SECTION TITLE -->
                     <div class="section_title">
-                        <h2>download now</h2>
+                        <h2>What Now?</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
                     </div>
                     <!--END DOWNLOAD NOW SECTION TITLE -->
@@ -598,106 +479,8 @@
                 </div>
             </div>
         </div>
-
-        <div class="available_store">
-            <div class="container  wow bounceInRight" data-wow-duration="1s">
-                <div class="col-md-6">
-                    <div class="available_title">
-                        <h2>Available on</h2>
-                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </div>
-                </div>
-
-                <!-- DOWNLOADABLE STORE -->
-                <div class="col-md-6">
-                    <div class="row">
-                        <a href="">
-                            <div class="col-md-4 no_padding">
-                                <div class="single_store">
-                                    <i class="fa fa-apple"></i>
-                                    <div class="store_inner">
-                                        <h2>iOS</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="col-md-4 no_padding">
-                            <a href="">
-                                <div class="single_store">
-                                    <i class="fa fa-android"></i>
-                                    <div class="store_inner">
-                                        <h2>ANDROID</h2>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4 no_padding">
-                            <a href="">
-                                <div class="single_store last">
-                                    <i class="fa fa-windows"></i>
-                                    <div class="store_inner">
-                                        <h2>WINDOWS</h2>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- END DOWNLOADABLE STORE -->
-            </div>
-        </div>
     </section>
     <!-- END DOWNLOAD -->
-
-
-<!-- =========================
-     Start Subscription Form 
-============================== -->
-
-
-
-    <section class="subscribe parallax subscribe-parallax" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
-        <div class="section_overlay wow lightSpeedIn">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-
-                        <!-- Start Subscribe Section Title -->
-                        <div class="section_title">
-                            <h2>SUBSCRIBE US</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                        </div>
-                        <!-- End Subscribe Section Title -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row  wow lightSpeedIn">
-                    <div class="col-md-6 col-md-offset-3">
-                        <!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
-                        <div class="subscription-success"></div>
-                        <div class="subscription-error"></div>
-
-
-                        <form id="mc-form" class="subscribe_form">
-                            <div class="form-group">
-                                <!-- EMAIL INPUT BOX -->
-                                <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Enter Email Address">
-                            </div>
-
-                                <!-- SUBSCRIBE BUTTON -->
-                            <button type="submit" class="btn btn-default subs-btn">Submit</button>
-                        </form>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- END SUBSCRIPBE FORM -->
 
 
 <!-- =========================
@@ -744,9 +527,17 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/script.js"></script>
-	<script src='js/tagcloud.js'></script>
-	<script src='js/aoxypj.js'></script>
-	<script src="js/index.js"></script>
+    <script src="js/beforeafter.js"></script>
+    <script src="js/zoom.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/utils/Draggable.min.js"></script>
+
+<script>
+			document.querySelector( '.page-body' ).addEventListener( 'click', function( event ) {
+				event.preventDefault();
+				zoom.to({ element: event.target });
+			} );
+		</script>
 
 
 
