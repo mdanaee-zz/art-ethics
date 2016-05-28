@@ -324,8 +324,8 @@ tuor:visited {
 
 .video_area {
     background: #ddd;
-    padding-bottom: 140px;
-    padding-top: 120px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .video_title {
     padding-bottom: 30px;
@@ -456,7 +456,6 @@ div.carousel-inner .item img {
     background-color: #f1f1f1
 }
 .feature_inner {
-    padding-top: 30px;
     padding-bottom: 70px;
 }
 .feature_iphone {} .feature_iphone img {
@@ -1122,7 +1121,7 @@ select:-webkit-autofill {
 			
 			#dragme{
 				position: absolute;
-				width: 10px;
+				width: 15px;
 				height: 100%;
 				top: 0px;
 				left: 0px;
@@ -1149,35 +1148,49 @@ select:-webkit-autofill {
 			}
 
 /*---------------------------------------
-  popover           
+  tooltip           
 -----------------------------------------*/
 
-.popoverThingy {
-	font-size: 30px;
-	color: #39bed2;
+.tooltip1 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
 }
 
-.popoverThingy:hover {
-	font-size: 30px;
-	color: #39bed2;
-	cursor: pointer;
+.tooltip1 .tooltiptext1 {
+    visibility: hidden;
+	min-width: 180px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+	font-size: 14px;
+	line-height: 16px;
+	
+	opacity: 0;
+    transition: opacity 1s;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 
-.popover-title {
-	font-size: 15px !important;
-	color: #39bed2 !important;
+.tooltip1:hover .tooltiptext1 {
+    visibility: visible;
+	opacity: 0.9;
 }
 
-.popover-content {
-	font-size: 12px !important;
-	color: #000 !important;
-	width: 100% !important;
-	height:auto !important;
-	margin-top: 40px !important;
-	line-height: 18px !important;
-}
-
-.popover {
-	width: 200px !important;
-	height: 100% !important;
+.tooltip1 .tooltiptext1::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
 }
