@@ -1095,9 +1095,15 @@ select:-webkit-autofill {
 /*---------------------------------------
   BEFORE AFTER             
 -----------------------------------------*/
+@media all and (max-width: 700px) {
+    #imageComparison {
+        display: none;
+    }
+}
+
 #before-after{
 		position: relative;
-		width: 600px;
+    width: 600px;
 		height: 366px;
 		margin: 50px auto 0px;;
 	}
